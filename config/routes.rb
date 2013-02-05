@@ -1,6 +1,10 @@
 SampleWebsite::Application.routes.draw do
+  resources :posts
+
+
   root :to => 'pages#home'
   match 'about' => 'pages#about'
+  match 'contacts' => 'pages#contacts'
   match 'contacts' => 'pages#contacts'
 
   # The priority is based upon order of creation:
